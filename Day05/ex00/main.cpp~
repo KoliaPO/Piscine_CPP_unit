@@ -1,0 +1,21 @@
+#include "Bureaucrat.hpp"
+
+int main ()
+{
+try
+{
+	Bureaucrat b1("Vasilyi", 135);
+	Bureaucrat b2("Petro", 1);
+	Bureaucrat b3("Sasha", 150);
+	Bureaucrat b4("Stas", 42);
+	b2.incrementGrade();
+}
+catch (std::exception & e)
+{
+	std::cout << "User idiot!!" << std::endl;
+	std::cout << e.what() << std::endl;
+	return (0);
+	
+}
+	return (0);
+}
